@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appointments</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header><h1>Appointments</h1></header>
+  <main class="container">
+    <input type="text" id="search" placeholder="Search by name..." onkeyup="filterTable()" />
+    <table id="patientTable">
+      <thead>
+        <tr><th>Time</th><th>Patient</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>09:00 AM</td><td>Amit Sharma</td><td>Checkup</td><td>Checked-In</td></tr>
+        <tr><td>10:30 AM</td><td>Priya Mehra</td><td>Consultation</td><td>Waiting</td></tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
